@@ -25,10 +25,6 @@ class TestUserAddToBasketFromProductPage:
         page.open()
         page.should_be_login_link()
         page.add_product_in_cart()
-        # page.solve_quiz_and_get_code()
-        # page.should_be_product_name()
-        # page.should_be_same_price()
-        page.should_not_be_success_message2()
 
     def test_guest_cant_see_product_in_basket_opened_from_product_page(self, browser):
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
